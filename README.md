@@ -19,10 +19,10 @@ For that, it is enough for:
 ## Configuration
 - To configure access to the database: "config/app.php"
 - In order to configure the database you can:
-    Import the DB "admin_slim.sql" in the current directory
+    	- Import the DB "admin_slim.sql" in the current directory
 
 ## Connection
 To be able to connect, I advise you to create an account on the project.
 You can use the default:
-    User: admin@admin.com
-    Password: admin
+		- User: admin@admin.com
+		- Password: admin
