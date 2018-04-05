@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Authentification with Slim Framework 3</title>
+
+        <link rel="stylesheet" href="{{ base_url() }}/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ base_url() }}/css/app.css">
+    </head>
+
+    <body>
+        {% include 'templates/partials/navigation.twig' %}
+
+        <div class="container">
+            {% include 'templates/partials/flash.twig' %}
+            {% block content %} {% endblock %}
+        </div>
+
+        <script src="{{ base_url() }}/js/jquery.min.js"></script>
+        <script src="{{ base_url() }}/js/bootstrap.min.js"></script>
+    </body>
+</html>
