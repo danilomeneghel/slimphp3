@@ -23,6 +23,6 @@ For that, it is enough for:
 
 ## Connection
 To be able to connect, I advise you to create an account on the project.
-You can use the default:
+- You can use the default:
     - Email: admin@admin.com
     - Password: admin
