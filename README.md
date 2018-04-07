@@ -1,14 +1,15 @@
-# Auth Slim Framework 3
+# Slim Framework 3
 ------------------------
 
 ## About Project
-Project an admin area based on Slim Framework 3.
-This project uses the object oriented PHP5, and the MVC.
+Basic project of an administrative area using Framework Slim and Bootstrap.
+Object Oriented PHP5 with MVC, Jquery, ORM Eloquent, Twig View and DB MySql.
 
 ## Features
+- Auth
+- Routes
 - Login
 - Change password
-- Routes
 
 ## How to install it
 For that, it is enough for:
@@ -17,7 +18,7 @@ For that, it is enough for:
 - Set up the DB
 
 ## Configuration
-- To configure access to the database: "config/app.php"
+- To configure access to the database: "config/db.php"
 - In order to configure the database you can:
     - Import the DB "admin_slim.sql" in the current directory
 
