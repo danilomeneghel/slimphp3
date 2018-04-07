@@ -4,23 +4,7 @@ use Respect\Validation\Validator as v;
 
 session_start();
 
-require __DIR__ . '/../vendor/autoload.php';
-
-$app = new \Slim\App([
-	'settings' => [
-		'displayErrorDetails' => true,
-        'db' => [
-            'driver' => 'mysql',
-            'host' => 'localhost',
-            'database' => 'admin_slim',
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8',
-            'collation' => 'utf8_general_ci',
-            'prefix' => '',
-        ]
-	]
-]);
+require __DIR__ . '/../config/db.php';
 
 $container = $app->getContainer();
 
@@ -69,6 +53,10 @@ $container['HomeController'] = function($container) {
 	return new \App\Controllers\HomeController($container);
 };
 
+$container['MoviesController'] = function($container) {
+	return new \App\Controllers\MoviesController($container);
+};
+
 $container['AuthController'] = function($container) {
     return new \App\Controllers\Auth\AuthController($container);
 };
@@ -79,6 +67,12 @@ $container['PasswordController'] = function($container) {
 
 $container['csrf'] = function($container) {
     return new \Slim\Csrf\Guard;
+};
+
+$container['environment'] = function () {
+    $scriptName = $_SERVER['SCRIPT_NAME'];
+    $_SERVER['SCRIPT_NAME'] = dirname(dirname($scriptName)) . '/' . basename($scriptName);
+    return new Slim\Http\Environment($_SERVER);
 };
 
 $app->add(new \App\Middleware\ValidationErrorsMiddleware($container));
