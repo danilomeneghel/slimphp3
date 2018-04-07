@@ -2,8 +2,8 @@
 ------------------------
 
 ## About Project
-Basic project of an administrative area using Framework Slim and Bootstrap.
-Object Oriented PHP5 with MVC, Jquery, ORM Eloquent, Twig View and DB MySql.
+Basic project of an administrative area with Framework Slim and Bootstrap.
+Used Object Oriented PHP5 with MVC, Jquery, ORM Eloquent, Twig View and DB MySql.
 
 ## Features
 - Auth
