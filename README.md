@@ -7,9 +7,10 @@ Used Object Oriented PHP5 with MVC, Jquery, ORM Eloquent, Twig View and DB MySql
 
 ## Features
 - Auth
+- Validator
 - Routes
 - Login
-- Change password
+- Change Password
 
 ## How to install it
 For that, it is enough for:
